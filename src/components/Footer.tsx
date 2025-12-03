@@ -33,7 +33,7 @@ export default function Footer() {
               </div>
               <div>
                 <div className="font-bold text-xl text-white">Hydrogen Network India</div>
-                <div className="text-xs text-gray-400">Hydrogen Network India</div>
+                <div className="text-xs text-gray-400">Industrial Training. Technology. Consulting.</div>
               </div>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
