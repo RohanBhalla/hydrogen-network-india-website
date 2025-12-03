@@ -6,7 +6,7 @@ export default function Header() {
 
   const navItems = [
     { label: 'Home', href: '#home' },
-    { label: 'Energy Systems', href: '#energy-systems' },
+    { label: 'Products', href: '#energy-systems' },
     { label: 'Services', href: '#services' },
     { label: 'Resources', href: '#resources' },
     { label: 'Blog', href: '#blog' },
