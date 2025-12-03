@@ -28,21 +28,6 @@ export default function Hero() {
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
-
-          <div className="mt-20 grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-3xl mx-auto">
-            <div className="p-6 bg-white rounded-2xl shadow-sm">
-              <div className="text-4xl font-bold text-blue-600 mb-2">500+</div>
-              <div className="text-gray-600">Trained Professionals</div>
-            </div>
-            <div className="p-6 bg-white rounded-2xl shadow-sm">
-              <div className="text-4xl font-bold text-green-600 mb-2">50+</div>
-              <div className="text-gray-600">Energy Projects</div>
-            </div>
-            <div className="p-6 bg-white rounded-2xl shadow-sm">
-              <div className="text-4xl font-bold text-orange-500 mb-2">100%</div>
-              <div className="text-gray-600">Clean Energy</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
