@@ -14,16 +14,18 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+    <header className="fixed top-0 left-0 right-0 bg-blue-600 shadow-lg z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-xl border-4 border-orange-400" style={{ borderColor: '#FF8C42' }}>
-              H<span className="text-sm">2</span>
-            </div>
+            <img
+              src="/Hydrogen Network India (10)-Photoroom.png"
+              alt="H2NI Logo"
+              className="w-12 h-12 object-contain"
+            />
             <div>
-              <div className="font-bold text-xl text-gray-900">Hydrogen Network India</div>
-              <div className="text-xs text-gray-600">Industrail Training. Technology. Consulting.</div>
+              <div className="font-bold text-xl text-white">Hydrogen Network India</div>
+              <div className="text-xs text-blue-100">Industrail Training. Technology. Consulting.</div>
             </div>
           </div>
 
@@ -32,7 +34,7 @@ export default function Header() {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
+                className="text-white hover:text-blue-200 font-medium transition-colors duration-200"
               >
                 {item.label}
               </a>
@@ -40,7 +42,7 @@ export default function Header() {
           </nav>
 
           <button
-            className="lg:hidden p-2 text-gray-700"
+            className="lg:hidden p-2 text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -49,13 +51,13 @@ export default function Header() {
       </div>
 
       {isMenuOpen && (
-        <div className="lg:hidden bg-white border-t">
+        <div className="lg:hidden bg-blue-700 border-t border-blue-500">
           <nav className="px-4 py-4 space-y-3">
             {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="block py-2 text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
+                className="block py-2 text-white hover:text-blue-200 font-medium transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
