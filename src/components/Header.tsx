@@ -8,6 +8,7 @@ export default function Header() {
     { label: 'Home', href: '#home' },
     { label: 'Products', href: '#energy-systems' },
     { label: 'Services', href: '#services' },
+    { label: 'Consulting', href: '#consulting' },
     { label: 'Resources', href: '#resources' },
     { label: 'Blog', href: '#blog' },
     { label: 'Contact', href: '#contact' },
