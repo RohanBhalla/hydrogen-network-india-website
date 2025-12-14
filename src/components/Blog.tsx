@@ -3,25 +3,28 @@ import { Calendar, ArrowRight } from 'lucide-react';
 export default function Blog() {
   const posts = [
     {
-      title: 'The Future of Green Hydrogen in India',
-      excerpt: 'Exploring the potential of hydrogen energy to transform India\'s energy landscape and achieve carbon neutrality goals.',
-      date: 'Nov 28, 2025',
+      title: 'Advanced Simulation Tools in the Green Hydrogen Economy: Optimizing Plant Operation & Fast-Tracking R&D',
+      excerpt: 'Simulation tools—spanning multiphysics CFD, process modelling, 1D system simulation, and full plant digital twins—now sit at the heart of successful hydrogen projects globally. Their impact is most visible across two domains: electrolyzer operations and fuel-cell system design.',
+      date: 'Dec 5, 2025',
       category: 'Industry Insights',
       image: 'https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'https://h2network.beehiiv.com/p/advanced-simulation-tools-in-the-green-hydrogen-economy-optimizing-plant-operation-fast-tracking-r-d',
     },
     {
-      title: 'Fuel Cell Technology: A Beginner\'s Guide',
-      excerpt: 'Understanding the fundamentals of fuel cells and their applications in modern energy systems.',
-      date: 'Nov 25, 2025',
-      category: 'Education',
+      title: 'Efficiency of PEM Electrolyzers & the Real Cost of Green Hydrogen in India',
+      excerpt: 'Electrolysis may seem simple — splitting water into hydrogen and oxygen — but behind every kilogram of green hydrogen lies a deep interplay between physics, efficiency, and economics. In India, PEM electrolyzers typically consume 50–55 kWh per kg of H₂, with electricity contributing 70–80% of the total production cost.',
+      date: 'Oct 14, 2025',
+      category: 'Industry Insights',
       image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'https://h2network.beehiiv.com/p/efficiency-of-pem-electrolyzers-the-real-cost-of-green-hydrogen-in-india',
     },
     {
-      title: 'Success Story: Hydrogen Microgrid Implementation',
-      excerpt: 'How we helped a manufacturing facility achieve energy independence with hydrogen-powered microgrids.',
-      date: 'Nov 20, 2025',
-      category: 'Case Study',
+      title: 'India-Japan JCM: Unlocking Article 6.2 Pathways for Indian P2X Exports',
+      excerpt: 'India and Japan\'s new JCM pact creates India\'s first bilateral carbon market mechanism, enabling P2X projects to pair hydrogen exports with ITMO-based revenue. The agreement shifts the model from pure commodity arbitrage to a dual-revenue structure combining hydrogen exports with Internationally Transferred Mitigation Outcomes monetization.',
+      date: 'Nov 18, 2025',
+      category: 'Industry Insights',
       image: 'https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'https://h2network.beehiiv.com/p/india-japan-jcm-unlocking-article-6-2-pathways-for-indian-p2x-exports',
     },
   ];
 
@@ -42,6 +45,7 @@ export default function Blog() {
             <article
               key={index}
               className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer"
+              onClick={() => window.open(post.url, '_blank')}
             >
               <div className="aspect-[16/10] overflow-hidden">
                 <img
