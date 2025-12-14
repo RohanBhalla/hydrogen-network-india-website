@@ -22,13 +22,13 @@ export default function Header() {
       label: 'Hydrogen Fuel Cell Drones & Mobile Electrolyser-Refuelling Module',
       href: '#product/drones',
       summary: 'Unlocking high-endurance drone operations with 2–3 hr flight endurance.',
-      thumbnail: '/H2 fuel cell kit.png',
+      thumbnail: '/fuelcelldrone.png',
     },
     {
       label: 'Hydrogen Nanogrids',
       href: '#product/nanogrids',
       summary: 'On-demand clean energy for 24×7 uptime with modular PV + BESS + fuel cell.',
-      thumbnail: '/Pv+E+FC .png',
+      thumbnail: '/microgrid.png',
     },
   ];
 
@@ -107,7 +107,7 @@ export default function Header() {
               ) : (
                 <a
                   key={item.label}
-                  href={item.href}
+                  href={item.href || ''}
                   className="text-white hover:text-blue-200 font-medium transition-colors duration-200"
                 >
                   {item.label}
@@ -199,7 +199,7 @@ export default function Header() {
               ) : (
                 <a
                   key={item.label}
-                  href={item.href}
+                  href={item.href || ''}
                   className="block py-2 text-white hover:text-blue-200 font-medium transition-colors duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >

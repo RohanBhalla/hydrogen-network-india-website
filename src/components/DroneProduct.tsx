@@ -33,7 +33,7 @@ export default function DroneProduct() {
             </div>
             <div className="bg-white rounded-xl overflow-hidden shadow-lg">
               <img
-                src="/H2 fuel cell kit.png"
+                src="/fuelcelldrone.png"
                 alt="Hydrogen Fuel Cell Drone System"
                 className="w-full h-96 object-cover"
               />
@@ -161,27 +161,7 @@ export default function DroneProduct() {
           </ul>
         </div>
 
-        {/* Gallery */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Gallery</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
-              { src: '/H2 fuel cell kit.png', alt: 'Fuel Cell Drone in Flight' },
-              { src: '/Electrolyzer kit.png', alt: 'Mobile Refuelling Skid' },
-              { src: '/Pv+E+FC .png', alt: 'Fuel Cell Stack' },
-              { src: '/H2 fuel cell kit.png', alt: 'Refuel Port' },
-            ].map((img, idx) => (
-              <div key={idx} className="bg-gray-100 rounded-xl overflow-hidden h-64">
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-
+        
         {/* CTA Section */}
         <div className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-xl p-12 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Integrate Hydrogen into Your Fleet?</h2>

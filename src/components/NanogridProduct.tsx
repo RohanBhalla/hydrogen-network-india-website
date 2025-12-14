@@ -33,7 +33,7 @@ export default function NanogridProduct() {
             </div>
             <div className="bg-white rounded-xl overflow-hidden shadow-lg">
               <img
-                src="/Pv+E+FC .png"
+                src="/microgrid.png"
                 alt="Hydrogen Nanogrid System"
                 className="w-full h-96 object-cover"
               />
@@ -145,26 +145,7 @@ export default function NanogridProduct() {
           </p>
         </div>
 
-        {/* Gallery */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Gallery</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
-              { src: '/Pv+E+FC .png', alt: 'Containerised Nanogrid with PV Array' },
-              { src: '/Electrolyzer kit.png', alt: 'EMS Dashboard' },
-              { src: '/H2 fuel cell kit.png', alt: 'Fuel Cell Module' },
-              { src: '/Pv+E+FC .png', alt: 'Container Internals' },
-            ].map((img, idx) => (
-              <div key={idx} className="bg-gray-100 rounded-xl overflow-hidden h-64">
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
+        
 
         {/* CTA Section */}
         <div className="bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-xl p-12 text-center">
