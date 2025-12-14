@@ -8,6 +8,7 @@ export default function EnergySystems() {
       description: 'Advanced hydrogen-powered drones with extended flight times for surveillance, agriculture, and industrial applications.',
       features: ['Extended Flight Time', 'Zero Emissions', 'Quick Refueling', 'Heavy Payload Capacity'],
       gradient: 'from-blue-500 to-cyan-500',
+      productId: 'drones',
     },
     {
       icon: Zap,
@@ -15,8 +16,13 @@ export default function EnergySystems() {
       description: 'Decentralized energy systems providing reliable, clean power for communities and industrial facilities.',
       features: ['24/7 Power Supply', 'Grid Independence', 'Scalable Solutions', 'Energy Storage'],
       gradient: 'from-green-500 to-emerald-500',
+      productId: 'nanogrids',
     },
   ];
+
+  const handleLearnMore = (productId: string) => {
+    window.location.hash = `#product/${productId}`;
+  };
 
   return (
     <section id="energy-systems" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-blue-50">
@@ -59,7 +65,10 @@ export default function EnergySystems() {
                   ))}
                 </div>
 
-                <button className="mt-8 w-full py-3 bg-gray-900 text-white font-semibold rounded-xl hover:bg-gray-800 transition-colors">
+                <button 
+                  onClick={() => handleLearnMore(system.productId)}
+                  className="mt-8 w-full py-3 bg-gray-900 text-white font-semibold rounded-xl hover:bg-gray-800 transition-colors"
+                >
                   Learn More
                 </button>
               </div>

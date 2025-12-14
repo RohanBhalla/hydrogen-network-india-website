@@ -43,6 +43,11 @@ function App() {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
+  // Scroll to top when page changes
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [currentPage, selectedProduct]);
+
   if (currentPage === 'consulting') {
     return (
       <div className="min-h-screen bg-white">
